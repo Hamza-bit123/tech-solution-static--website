@@ -16,6 +16,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
+    position: relative;
 }
 
 header {
@@ -394,4 +395,52 @@ img {
 
 .lower__section span {
     opacity: 0.7;
+}
+
+/*=============================================================
+                                    ABOUT PAGE
+================================================================*/
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banner {
+    height: 12rem;
+    overflow: hidden;
+    width: 100%;
+    background-image: url("../assets/about_us/banner.jpg");
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.banner__text {
+    width: 100%;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    color: #F2F2F2;
+    background-color: #42698c9b;
+}
+
+.about_section {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "image description";
+    grid-template-columns: 1fr 1fr;
+}
+
+.about_section__title {
+    grid-area: title;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.about_section__image {
+    grid-area: image;
 }
