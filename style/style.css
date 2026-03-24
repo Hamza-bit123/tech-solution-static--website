@@ -121,7 +121,7 @@ header {
 }
 
 .responsiveNav {
-    width: 93vw;
+    width: 100%;
     background-color: #336154e3;
     border-radius: 1rem;
     display: flex;
@@ -130,7 +130,7 @@ header {
     color: #e6e4e4;
     position: absolute;
     top: 75px;
-    left: -1.5rem;
+    left: 0rem;
     font-size: 1.2rem;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     animation: zoomIn 1s;
@@ -404,6 +404,7 @@ footer {
 .footer--card__description {
     opacity: 0.8;
     text-align: justify;
+    font-size: 1.2rem;
 }
 
 .social_medias {
@@ -422,7 +423,7 @@ img {
 }
 
 .footer--card__title {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -435,7 +436,7 @@ img {
 }
 
 .footer__link {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     opacity: 0.8;
 }
 
@@ -460,10 +461,12 @@ img {
     flex-direction: column;
     gap: 7px;
     align-items: center;
+    padding: 3px;
 }
 
 .lower__section span {
     opacity: 0.7;
+    text-align: center;
 }
 
 /*=============================================================
@@ -544,7 +547,7 @@ img {
 
 .mission_vision--cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
 }
 
 .mission,
@@ -612,6 +615,10 @@ img {
     justify-content: center;
     padding: 0.5rem;
     max-width: 30%;
+}
+
+.contact--banner__text {
+    padding-right: 30%;
 }
 
 .__text {

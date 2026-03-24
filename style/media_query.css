@@ -16,17 +16,73 @@
     .hero__title {
         font-size: 2rem;
     }
+
+    /* =============================================
+                    ABOUT PAGE
+    ================================================ */
+    .about_section {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+    }
+
+    .about_section__title::after {
+        content: ' ?';
+    }
+
+    .about_section__question_tag {
+        display: none;
+    }
+
+    .about_section__title {
+        grid-area: 1/1/2/2;
+    }
+
+    .about_section__image {
+        grid-area: 2/1/4/2;
+        z-index: 1;
+    }
+
+    .about_section__description {
+        background-color: rgba(255, 255, 255, 0.5);
+        grid-area: 3/1/4/2;
+        z-index: 2;
+        padding: 0.5rem;
+        text-align: justify;
+        font-size: 1.5rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .__text {
+        font-size: 1.3rem;
+    }
+
+    form {
+        grid-template-areas: none;
+        grid-template-columns: 1fr;
+    }
+
+    .get--first_name {
+        grid-area: 1/1/2/2;
+    }
+
+    .get--last_name {
+        grid-area: 2/1/3/2;
+    }
+
+    .get--email {
+        grid-area: 3/1/4/2;
+    }
+
+    .get--text_area {
+        grid-area: 4/1/5/2;
+    }
+
+    .get--btn {
+        grid-area: 5/1/6/2;
+    }
 }
 
-@media (max-width: 425px) {
-    html {
-        font-size: 14px;
-    }
-
-    body {
-        padding: 1.5rem;
-    }
-
+@media (max-width: 668px) {
     .list_container {
         display: none;
     }
@@ -39,31 +95,101 @@
         display: block;
     }
 
+}
+
+@media (max-width: 520px) {
+    .contact--cards {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 1.5rem;
+    }
+
     .hero--section {
         grid-template-areas: none;
     }
 
     .hero__title {
-        font-size: 1.5rem;
-        grid-area: 1/1/1/2;
+        grid-area: 1/1/2/3;
+        margin: 0;
     }
 
     .hero__description {
-        grid-area: 5/1/6/2;
+        grid-area: 5/1/6/3;
         z-index: 2;
         background-color: #65bfa6a5;
         padding: 0;
     }
 
     .CA_buttons {
-        grid-area: 6/1/6/2;
+        grid-area: 6/1/7/3;
         z-index: 2;
     }
 
     .hero__image {
         z-index: 1;
-        grid-area: 2/1/6/2;
+        grid-area: 2/1/6/3;
     }
+
+    .banner {
+        background-position-x: center;
+    }
+
+    .about_section__description {
+        font-size: 1.1rem;
+    }
+
+    .mission_vision--cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .mission,
+    .vision {
+        grid-template-areas: none;
+        grid-template-columns: 1fr;
+    }
+
+    .mission--card__title,
+    .vision--card__title {
+        grid-area: 1/1/2/2;
+        text-align: center;
+    }
+
+    .mission--card__description,
+    .vision--card__description {
+        grid-area: 2/1/3/2;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .mission--card__image,
+    .vision--card__image {
+        grid-area: 3/1/4/2;
+        margin: auto;
+    }
+
+    .banner__description {
+        max-width: 100%;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: fit-content;
+        background: transparent;
+    }
+
+    .contact--banner__text {
+        padding: 0 0 3rem 0;
+        font-size: 2.5rem;
+    }
+
 }
 
 @media (max-width: 340px) {
@@ -74,4 +200,13 @@
     .hero__image img {
         width: 250px;
     }
+
+    .hero__description {
+        font-size: 1.1rem;
+    }
+
+    .about_section__description {
+        font-size: 1rem;
+    }
+
 }

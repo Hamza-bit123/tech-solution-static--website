@@ -10,12 +10,51 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=DM+Serif+Display:ital@0;1&display=swap"
             rel="stylesheet"> </head>
-            <link rel="stylesheet" href="./style/media_query.css">
+    <link rel="stylesheet" href="./style/media_query.css">
     <body>
-        <header id="header"></header>
+        <header>
+            <div class="logo_nav">
+                <div class="logo">
+                    <img class="logo_image" src="./assets/logo_image.webp"
+                        alt="Codveda logo">
+                </div>
+                <nav class="main_nav">
+                    <ul class="list_container">
+                        <li class="list"><a href="../index.html">Home</a></li>
+                        <li class="list"><a href="../about.html">About</a></li>
+                        <li class="list"><a href="../contact.html">Contact
+                                Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__buttons">
+                <button class="header__button">Get Started</button>
+            </div>
+            <div class="menu_icon" id="menu_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path
+                        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+            </div>
+            <nav class="responsiveNav" id="responsiveNav">
+                <ul class="responsive--list_container">
+                    <li class="list responsive--list"><a
+                            href="../index.html">Home</a></li>
+                    <hr>
+                    <li class="list responsive--list"><a
+                            href="../about.html">About</a></li>
+                    <hr>
+                    <li class="list responsive--list"><a
+                            href="../contact.html">Contact Us</a></li>
+                    <hr>
+                    <li class="list responsive--list"><a
+                            href="#">Account</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <section class="section hero--section">
-            <h1 class="hero__title" id="cls">Smart Technology Solutions for Modern
+            <h1 class="hero__title" id="cls">Smart Technology Solutions for
+                Modern
                 Businesses</h1>
             <p class="hero__description">We help businesses grow with innovative
                 technology
@@ -167,7 +206,48 @@
                 </div>
             </div>
         </section>
-        <footer id="footer"></footer>
+        <footer>
+            <div class="cards footer--cards">
+                <div class="card footer--card">
+                    <div class="footer--card__image">
+                        <img src="../assets//logo_image.webp" alt="Codveda logo">
+                    </div>
+                    <span class="footer--card__description">
+                        Delivering innovative technology solutions to help
+                        businesses
+                        grow, succeed, and stay competitive in the digital
+                        world.
+                    </span>
+                    <div class="social_medias">
+                        <img
+                            src="./assets/social media icons/facebook_2626269.png"
+                            alt="facebook" width="20">
+                        <img
+                            src="./assets/social media icons//linkedin_4782336.png"
+                            alt="linkdeen" width="20">
+                        <img
+                            src="./assets/social media icons/twitter_3670211.png"
+                            alt="twitter" width="20">
+                    </div>
+                </div>
+                <div class="card footer--card">
+                    <span class="footer--card__title">Quick Links</span>
+                    <ul class="footer__links">
+                        <li class="footer__link"><a
+                                href="../index.html">HOME</a></li>
+                        <li class="footer__link"><a
+                                href="../about.html">ABOUT</a></li>
+                        <li class="footer__link"><a
+                                href="../contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="horizontal_line"></div>
+            <div class="lower__section">
+                <span>© 2026 Codveda TechSolutions. All rights reserved.</span>
+                <span>Privacy Policy | Terms of Service</span>
+            </div>
+        </footer>
 
         <script src="./script/script.js"></script>
     </body>
